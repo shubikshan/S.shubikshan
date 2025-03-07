@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main()
+{
+  int i;
+  printf("Enter the number");
+  scanf("%d",&i);
+  int a;
+  while(i>0)
+  {
+      a=i%10;
+      printf("%d\n",a);
+      i=i/10;
+  }
+
+    return 0;
+}
