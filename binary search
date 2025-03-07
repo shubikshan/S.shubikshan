@@ -1,0 +1,27 @@
+ #include<stdio.h>
+int main()
+{
+    int n,se;
+    scanf("%d %d" , &n,&se);
+    int  a[n];
+    for(int i=0; i<n ;i++)
+    scanf("%d",&a[i]);
+    int st, end ,mid;
+    st=0;
+    end =n-1;
+    while(st<=end)
+    {
+        mid=(st+end)/2;
+        if(a[mid]==se){
+            printf("%d",mid);
+            break;
+           
+        }
+        else if(a[mid]>se)
+         end=mid-1;
+        else
+        st=mid+1;
+    }
+    if(st>end)
+    printf("no such element");
+}
