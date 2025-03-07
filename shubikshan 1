@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter the 2 number ");
+    scanf("%d %d",&a,&b);
+    for (int i=1;i<=1;i++)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    printf("fibonacci number %d",c);
+    return 0;
+}
